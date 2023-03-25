@@ -1,0 +1,18 @@
+{
+  "name": "reklame-rute",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=./",
+    "preview": "vite preview",
+    "postbuild": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.0.3",
+    "gh-pages": "^5.0.0",
+    "svelte": "^3.55.1",
+    "vite": "^4.2.0"
+  }
+}
