@@ -16,8 +16,14 @@
 </main>
 
 <style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   main {
-    padding: 1rem;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
   }
   li {
     list-style-type: none;
