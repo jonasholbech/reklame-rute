@@ -1,21 +1,26 @@
 <script>
   import { streets } from "./stores/store";
+  import Menu from "./lib/Menu.svelte";
   let fontSize = 1.8;
+  let hideFinished = false;
+  $: toShow = hideFinished ? $streets.filter((i) => !i.completed) : $streets;
 </script>
 
-<main style={`--size: ${fontSize}rem`}>
+<Menu>
+  <p>Text størrelse</p>
   <input type="range" min="0.5" max="4" bind:value={fontSize} step="0.1" />
+  <p>Skjul færdige</p>
+  <input type="checkbox" bind:checked={hideFinished} />
+</Menu>
+<main style={`--size: ${fontSize}rem`}>
   <ol>
-    {#each $streets as street}
+    {#each toShow as street}
       <li>
-        <label
-          ><input type="checkbox" name="" bind:checked={street.completed} />
-          <span>{street.s}</span>
-        </label>
+        <input type="checkbox" name="" bind:checked={street.completed} />
         <details>
-          <summary>Map</summary>
+          <summary>{street.s}</summary>
           <a href={`/paths/${street.m}.png`} target="_blank"
-            ><img src={`/paths/${street.m}.png`} alt="" /></a
+            ><img src={`/paths/webp/${street.m}.webp`} alt="" /></a
           >
         </details>
       </li>
@@ -26,8 +31,6 @@
 <style>
   * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
   }
   main {
     padding: 0.3rem;
@@ -35,24 +38,20 @@
   }
   li {
     list-style-type: none;
-    margin-bottom: 0.5rem;
-    overflow: hidden;
-  }
-  li label {
     font-size: var(--size, 1.8rem);
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    line-height: 2rem;
   }
-  li label span {
-    display: inline-block;
-  }
-  details {
-    display: block;
-    text-align: center;
-  }
-  li label input {
+
+  li input {
     display: inline-block;
     width: calc(var(--size) + 1rem);
     height: calc(var(--size) + 1rem);
     margin-right: 0.5rem;
+  }
+  details summary {
+    line-height: initial;
   }
 </style>

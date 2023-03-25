@@ -1,28 +1,25 @@
 [
-  { "s": "Ellekildevej➡️Netto", "m": "ellekildevej" },
+  { "s": "Ellekildevej m.fl", "m": "ellekildevej" },
   { "s": "Græsvang-Fyrrekrogen", "m": "græsvang-fyrrekrogen" },
-  { "s": "Åbyvej, Horsevang, Bøgevej", "m": "åbyvej-horsevang-bøgevej" },
-  { "s": "Åbyvej", "m": "" },
-  { "s": "Humlevang", "m": "" },
-  { "s": "Pilevej", "m": "" },
-  { "s": "Åbyvej", "m": "" },
-  { "s": "Dyrehegnet➡️Julius", "m": "" },
-  { "s": "Dyrehegnet➡️Noah", "m": "" },
-  { "s": "Dyvels Krat", "m": "" },
-  { "s": "Dyrehegnet", "m": "" },
-  { "s": "Ved Hanevad", "m": "" },
-  { "s": "Almeengen", "m": "" },
-  { "s": "Åbyvej", "m": "" },
-  { "s": "Ståbyvej", "m": "" },
-  { "s": "Vibyvej", "m": "" },
-  { "s": "Melbyvej", "m": "" },
-  { "s": "Hårbyvej", "m": "" },
-  { "s": "Dræbyvej", "m": "" },
-  { "s": "Åbyvej", "m": "" },
-  { "s": "Gambyvej", "m": "" },
-  { "s": "Udbyvej", "m": "" },
-  { "s": "Åbyvej", "m": "" },
-  { "s": "Højbyvej", "m": "" },
-  { "s": "Åbyvej", "m": "" },
-  { "s": "Søbyvej", "m": "" }
+  { "s": "Åbyvej, Horsevang, Bøgevej", "m": "åbyvej-horsevang-bøgevej" },
+  { "s": "Åbyvej, Humlevang, Pilevej", "m": "åbyvej-humlevang-pilevej" },
+  { "s": "Åbyvej, Dyrehegnet", "m": "åbyvej-dyrehegnet" },
+  { "s": "Ved Hanevad, Almeengen", "m": "ved-hanevad-almeengen" },
+  { "s": "Dyvels Krat", "m": "dyvelskrat" },
+  {
+    "s": "Åbyvej, Ståbyvej, Vibyvej, Melbyvej, Hårbyvej, Dræbyvej",
+    "m": "åbyvej-ståbyvej-vibyvej-melbyvej-hårbyvej-dræbyvej"
+  },
+  {
+    "s": "Åbyvej, Gambyvej, Udbyvej, højbyvej",
+    "m": "aabyvej-gambyvej-uddbyvej-hoejbyvej"
+  },
+  {
+    "s": "Åbyvej, Skovbyvej, Brobyvej, Søbyvej",
+    "m": "aabyvej-skovbyvej-brobyvej-soebyvej"
+  },
+  { "s": "Brobyvej", "m": "brobyvej" },
+  { "s": "Nederbyvej", "m": "nederbyvej" },
+  { "s": "Hjulbyvej, Nederbyvej", "m": "hjulbyvej-nederbyvej" },
+  { "s": "Skelbyvej, Nederbyvej", "m": "skelbyvej-nederbyvej" }
 ]
