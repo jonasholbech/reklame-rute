@@ -1,8 +1,10 @@
 <script>
   import { streets } from "./stores/store";
+  let fontSize = 1.8;
 </script>
 
-<main>
+<main style={`--size: ${fontSize}rem`}>
+  <input type="range" min="0.5" max="4" bind:value={fontSize} step="0.1" />
   <ol>
     {#each $streets as street}
       <li>
@@ -32,7 +34,8 @@
   li label {
     display: flex;
     gap: 1rem;
-    font-size: 1.8rem;
+    font-size: var(--size, 1.8rem);
+    align-items: center;
   }
   li label input {
     width: 50px;
