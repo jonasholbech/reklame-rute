@@ -19,8 +19,8 @@
         <input type="checkbox" name="" bind:checked={street.completed} />
         <details>
           <summary>{street.s}</summary>
-          <a href={`/paths/webp/${street.m}.webp`} target="_blank"
-            ><img src={`/paths/webp/${street.m}.webp`} alt="" /></a
+          <a href={`./paths/webp/${street.m}.webp`} target="_blank"
+            ><img src={`./paths/webp/${street.m}.webp`} alt="" /></a
           >
         </details>
       </li>
