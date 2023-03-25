@@ -30,16 +30,19 @@
   li {
     list-style-type: none;
     margin-bottom: 0.5rem;
+    overflow: hidden;
   }
   li label {
-    display: flex;
-    gap: 1rem;
     font-size: var(--size, 1.8rem);
     align-items: center;
   }
+  li label span {
+    display: inline-block;
+  }
   li label input {
-    width: 50px;
-    height: 50px;
-    min-width: 50px;
+    display: inline-block;
+    width: calc(var(--size) + 1rem);
+    height: calc(var(--size) + 1rem);
+    margin-right: 0.5rem;
   }
 </style>
