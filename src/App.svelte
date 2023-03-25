@@ -10,8 +10,14 @@
       <li>
         <label
           ><input type="checkbox" name="" bind:checked={street.completed} />
-          <span>{street.street}</span>
+          <span>{street.s}</span>
         </label>
+        <details>
+          <summary>Map</summary>
+          <a href={`/paths/${street.m}.png`} target="_blank"
+            ><img src={`/paths/${street.m}.png`} alt="" /></a
+          >
+        </details>
       </li>
     {/each}
   </ol>
@@ -38,6 +44,10 @@
   }
   li label span {
     display: inline-block;
+  }
+  details {
+    display: block;
+    text-align: center;
   }
   li label input {
     display: inline-block;
