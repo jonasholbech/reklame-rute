@@ -32,5 +32,29 @@
   { "s": "Brobyvej", "m": "brobyvej", "h": 23 },
   { "s": "Nederbyvej", "m": "nederbyvej", "h": 59 },
   { "s": "Hjulbyvej, Nederbyvej", "m": "hjulbyvej-nederbyvej", "h": 30 },
-  { "s": "Skebyvej, Nederbyvej", "m": "skelbyvej-nederbyvej", "h": 30 }
+  { "s": "Skebyvej, Nederbyvej", "m": "skelbyvej-nederbyvej", "h": 30 },
+  { "s": "Kirkebyvej, Stensbyvej", "m": "kirdkebyvej-stensbyvej", "h": 30 },
+  { "s": "Kirkebyvej, Bransbyvej", "m": "kirkebyvej-bransbyvej", "h": 30 },
+  { "s": "Kirkebyvej, Stokkebyvej", "m": "kirkebyvej-stokkebyvej", "h": 44 },
+  { "s": "Askeengen, Lindeengen", "m": "askeengen-lindeengen", "h": 184 },
+  {
+    "s": "Birkeengen, Toftholmvænget",
+    "m": "birkeengen-toftholmvaenget",
+    "h": 99
+  },
+  {
+    "s": "Kløvertoften, Hasselvej",
+    "m": "kloevertoften-hasselvej",
+    "h": 156
+  },
+  {
+    "s": "Hybenvænget, Bakkehøj",
+    "m": "hybenvaenget-bakkehøj",
+    "h": 114
+  },
+  {
+    "s": "Morelvej, Tjørnevænget, Lundagervej",
+    "m": "morelvej-tjoernevaenget-lundagervej",
+    "h": 130
+  }
 ]
