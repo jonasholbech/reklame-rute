@@ -3,7 +3,19 @@
   import Menu from "./lib/Menu.svelte";
   let fontSize = 1.8;
   let hideFinished = false;
+  let earned = 0;
   $: toShow = hideFinished ? $streets.filter((i) => !i.completed) : $streets;
+  $: {
+    earned = getEarned($streets);
+  }
+  function getEarned(_) {
+    let completed = $streets.filter((i) => i.completed);
+    let sum = 0;
+    completed.forEach((e) => {
+      sum += e.h;
+    });
+    return sum;
+  }
 </script>
 
 <Menu>
@@ -11,6 +23,7 @@
   <input type="range" min="0.5" max="4" bind:value={fontSize} step="0.1" />
   <p>Skjul færdige</p>
   <input type="checkbox" bind:checked={hideFinished} />
+  <p>Tjent: {earned}</p>
 </Menu>
 <main style={`--size: ${fontSize}rem`}>
   <ol>
@@ -18,7 +31,7 @@
       <li>
         <input type="checkbox" name="" bind:checked={street.completed} />
         <details>
-          <summary>{street.s}</summary>
+          <summary>{street.s} ({street.h})</summary>
           <a href={`./paths/webp/${street.m}.webp`} target="_blank"
             ><img src={`./paths/webp/${street.m}.webp`} alt="" /></a
           >

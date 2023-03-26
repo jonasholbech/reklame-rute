@@ -1,25 +1,36 @@
 [
-  { "s": "Ellekildevej m.fl", "m": "ellekildevej" },
-  { "s": "Græsvang-Fyrrekrogen", "m": "græsvang-fyrrekrogen" },
-  { "s": "Åbyvej, Horsevang, Bøgevej", "m": "åbyvej-horsevang-bøgevej" },
-  { "s": "Åbyvej, Humlevang, Pilevej", "m": "åbyvej-humlevang-pilevej" },
-  { "s": "Åbyvej, Dyrehegnet", "m": "åbyvej-dyrehegnet" },
-  { "s": "Ved Hanevad, Almeengen", "m": "ved-hanevad-almeengen" },
-  { "s": "Dyvels Krat", "m": "dyvelskrat" },
+  { "s": "Ellekildevej m.fl", "m": "ellekildevej", "h": 29 },
+  { "s": "Græsvang-Fyrrekrogen", "m": "græsvang-fyrrekrogen", "h": 39 },
+  {
+    "s": "Åbyvej, Horsevang, Bøgevej",
+    "m": "åbyvej-horsevang-bøgevej",
+    "h": 48
+  },
+  {
+    "s": "Åbyvej, Humlevang, Pilevej",
+    "m": "åbyvej-humlevang-pilevej",
+    "h": 37
+  },
+  { "s": "Åbyvej, Dyrehegnet", "m": "åbyvej-dyrehegnet", "h": 36 },
+  { "s": "Ved Hanevad, Almeengen", "m": "ved-hanevad-almeengen", "h": 43 },
+  { "s": "Dyvels Krat", "m": "dyvelskrat", "h": 26 },
   {
     "s": "Åbyvej, Ståbyvej, Vibyvej, Melbyvej, Hårbyvej, Dræbyvej",
-    "m": "åbyvej-ståbyvej-vibyvej-melbyvej-hårbyvej-dræbyvej"
+    "m": "åbyvej-ståbyvej-vibyvej-melbyvej-hårbyvej-dræbyvej",
+    "h": 100
   },
   {
     "s": "Åbyvej, Gambyvej, Udbyvej, højbyvej",
-    "m": "aabyvej-gambyvej-uddbyvej-hoejbyvej"
+    "m": "aabyvej-gambyvej-uddbyvej-hoejbyvej",
+    "h": 38
   },
   {
     "s": "Åbyvej, Skovbyvej, Brobyvej, Søbyvej",
-    "m": "aabyvej-skovbyvej-brobyvej-soebyvej"
+    "m": "aabyvej-skovbyvej-brobyvej-soebyvej",
+    "h": 42
   },
-  { "s": "Brobyvej", "m": "brobyvej" },
-  { "s": "Nederbyvej", "m": "nederbyvej" },
-  { "s": "Hjulbyvej, Nederbyvej", "m": "hjulbyvej-nederbyvej" },
-  { "s": "Skelbyvej, Nederbyvej", "m": "skelbyvej-nederbyvej" }
+  { "s": "Brobyvej", "m": "brobyvej", "h": 23 },
+  { "s": "Nederbyvej", "m": "nederbyvej", "h": 59 },
+  { "s": "Hjulbyvej, Nederbyvej", "m": "hjulbyvej-nederbyvej", "h": 30 },
+  { "s": "Skebyvej, Nederbyvej", "m": "skelbyvej-nederbyvej", "h": 30 }
 ]
