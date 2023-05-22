@@ -12,7 +12,7 @@
     let completed = $streets.filter((i) => i.completed);
     let sum = 0;
     completed.forEach((e) => {
-      sum += e.h;
+      sum += e.h * (e.factor || 1);
     });
     return sum;
   }
